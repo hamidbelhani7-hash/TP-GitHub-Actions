@@ -1,11 +1,9 @@
 name: Mon premier workflow
 
-# Déclenchement du workflow
 on:
   push:
 
-# Définition des tâches
-job:
+jobs:
   premier-job:
     runs-on: ubuntu-latest
     steps:
@@ -15,15 +13,13 @@ job:
       - name: Afficher la date
         run: date
 
-      - name: Afficher le système
+      - name: Afficher le systeme
         run: uname -a
 
-      # Exercice 2
       - name: Nom du projet
         run: echo "Projet TP DevOps"
 
-      # Exercice 3 (remplacez VOTRE NOM par votre vrai nom)
-      - name: Afficher mon nom et la date d'exécution
+      - name: Afficher mon nom et la date d execution
         run: |
-          echo "Nom : VOTRE NOM"
-          echo "Date d'exécution : $(date)"
+          echo "Nom : hamidbelhani7-hash"
+          echo "Date : $(date)"
